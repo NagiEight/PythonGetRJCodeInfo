@@ -2,11 +2,9 @@
 import click
 
 @click.command()
-@click.argument('name')
-@click.option('--greeting', '-g')
-def main(name, greeting):
-    click.echo("{}, {}".format(greeting, name))
+@click.argument('rjcode')
+def main(rjcode):
+    print(rjcode)
 
 if __name__ == "__main__":
     main()
-    
